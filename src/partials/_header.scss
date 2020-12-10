@@ -1,7 +1,9 @@
 header {
-    height: $headerHeight;
+    min-height: $headerHeight;
     position: relative;
     background-color: $brandPrimary;
+    color: $textPrimary;
+    font-size: $fontSize;
 
     // TOP action link
     .action {
@@ -45,12 +47,36 @@ header {
 // SM
 @media screen and (min-width: $mqMD) {
     header {
-        height: unset;
+        // all header style
+        ul {
+            text-transform: capitalize;
+
+            li {
+                height: $headerHeight;
+                line-height: $headerHeight;
+                padding: 0 $spacing;
+                margin: 0 $spacing;
+            }
+        }
 
         // TOP action link
         .action {
             display: block;
 
+            ul {
+                text-align: right;
+
+                li {
+                    height: $headerHeight * 0.9; line-height: $headerHeight * 0.9;
+                    color: $textPrimarySec;
+                    font-size: $fontSize * 0.85;
+
+                    &:hover {
+                        color: $textPrimary;
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
 
         // BTM main-header
@@ -73,6 +99,17 @@ header {
             .nav-bar {
                 display: block;
                 float: left;
+
+                ul {
+                    li {
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $primaryInverse;
+                            color: $textPrimaryInverse;
+                        }
+                    }
+                }
             }
         } // fine main-header (logo, hamburger-menu, nav-menu)
     } // fine header
