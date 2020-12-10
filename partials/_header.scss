@@ -1,0 +1,28 @@
+// TOP action link
+.action {
+    height: 50px;
+    background-color: purple;
+}
+
+// BTM main-header
+.main-header {
+    &::after {
+        @include clearfix;
+    }
+
+    // SX header-logo
+    .logo {
+        height: 50px;
+        width: 100px;
+        background-color: pink;
+        float: left;
+    }
+
+    // DX header main-menu
+    .nav-bar {
+        height: 50px;
+        width: 100px;
+        background-color: orange;
+        float: left;
+    }
+}

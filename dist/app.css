@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.action {
+  height: 50px;
+  background-color: purple;
+}
+
+.main-header::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.main-header .logo {
+  height: 50px;
+  width: 100px;
+  background-color: pink;
+  float: left;
+}
+
+.main-header .nav-bar {
+  height: 50px;
+  width: 100px;
+  background-color: orange;
+  float: left;
+}
+
+header {
+  background-color: red;
+}
+
+main {
+  height: 100px;
+  background-color: green;
+}
+
+footer {
+  height: 100px;
+  background-color: blue;
+}
+
