@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0;
   margin: 0;
@@ -25,6 +27,12 @@ ul li {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a.dropdown::after {
+  content: "\F107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
 }
 
 header {
@@ -80,6 +88,10 @@ header .main-header .nav-bar {
     margin: 0 12px;
   }
 
+  header ul a.dropdown::after {
+    margin-left: 6px;
+  }
+
   header .action {
     display: block;
   }
@@ -98,6 +110,11 @@ header .main-header .nav-bar {
   header .action ul li:hover {
     color: #ffffff;
     text-decoration: underline;
+  }
+
+  header .action ul li i {
+    color: #009cff;
+    margin-right: 6px;
   }
 
   header .main-header::after {
@@ -129,13 +146,48 @@ header .main-header .nav-bar {
   }
 }
 
+footer li.footer-list {
+  display: block;
+}
+
+footer li.footer-list ul li {
+  display: block;
+}
+
+footer .copy-container .partners {
+  height: 50px;
+  background-color: red;
+}
+
+footer .copy-container .copy {
+  height: 50px;
+  background-color: orange;
+}
+
+@media screen and (min-width: 768px) {
+  footer li.footer-list {
+    display: inline-block;
+  }
+
+  footer .copy-container::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  footer .copy-container .partners {
+    float: left;
+    width: 50px;
+  }
+
+  footer .copy-container .copy {
+    float: right;
+    width: 50px;
+  }
+}
+
 main {
   height: 100px;
   background-color: green;
-}
-
-footer {
-  height: 100px;
-  background-color: blue;
 }
 

@@ -1,0 +1,94 @@
+footer {
+    li.footer-list {
+        display: block;
+        ul {
+
+            li {
+                display: block;
+            }
+        }
+    }
+
+    // TOP footer-menu
+    .footer-menu {
+        ul {
+            li {
+                .menu-title {
+
+                }
+
+
+            }
+        }
+    }
+
+    // BTM copy
+    .copy-container {
+        // TOP -> SX logo partners
+        .partners {
+            height: 50px;
+            background-color: red;
+        }
+
+        // TOP -> SX logo partners
+        .copy {
+            height: 50px;
+            background-color: orange;
+        }
+    }
+}
+
+// XS
+@media screen and (min-width: $mqSM) {
+
+}
+// SM
+@media screen and (min-width: $mqMD) {
+    footer {
+        li.footer-list {
+            display: inline-block;
+        }
+
+
+        // TOP footer-menu
+        .footer-menu {
+            ul {
+                li {
+                    .menu-title {
+
+                    }
+
+
+                }
+            }
+        }
+
+        // BTM copy
+        .copy-container {
+            &::after {
+                @include clearfix;
+            }
+
+            // TOP -> SX logo partners
+            .partners {
+                float: left;
+                width: 50px;
+            }
+
+            // TOP -> SX logo partners
+            .copy {
+                float: right;
+                width: 50px;
+            }
+        }
+    }
+}
+// MD
+@media screen and (min-width: $mqLG) {
+
+}
+// LG
+@media screen and (min-width: $mqXL) {
+
+}
+// XL

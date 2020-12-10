@@ -4,14 +4,10 @@
 @import 'partials/common';
 
 @import 'partials/header';
-
+@import 'partials/footer';
 
 
 main {
     height: 100px;
     background-color: green;
-}
-footer {
-    height: 100px;
-    background-color: blue;
 }

@@ -1,8 +1,8 @@
 header {
     min-height: $headerHeight;
     position: relative;
-    background-color: $brandPrimary;
-    color: $textPrimary;
+    background-color: $brandPr;
+    color: $textPr;
     font-size: $fontSize;
 
     // TOP action link
@@ -57,6 +57,12 @@ header {
                 padding: 0 $spacing;
                 margin: 0 $spacing;
             }
+
+            a {
+                &.dropdown::after {
+                    margin-left: $spacing / 2;
+                }
+            }
         }
 
         // TOP action link
@@ -68,12 +74,17 @@ header {
 
                 li {
                     height: $headerHeight * 0.9; line-height: $headerHeight * 0.9;
-                    color: $textPrimarySec;
+                    color: $textPrAlt;
                     font-size: $fontSize * 0.85;
 
                     &:hover {
-                        color: $textPrimary;
+                        color: $textPr;
                         text-decoration: underline;
+                    }
+
+                    i {
+                        color: $brandSec;
+                        margin-right: $spacing / 2;
                     }
                 }
             }
@@ -105,8 +116,8 @@ header {
                         cursor: pointer;
 
                         &:hover {
-                            background-color: $primaryInverse;
-                            color: $textPrimaryInverse;
+                            background-color: $prInverse;
+                            color: $textPrInverse;
                         }
                     }
                 }
