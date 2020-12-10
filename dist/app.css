@@ -6,39 +6,76 @@
 
 .container {
   width: 90%;
-  height: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  background-color: white;
-}
-
-.action {
-  height: 50px;
-  background-color: purple;
-}
-
-.main-header::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-.main-header .logo {
-  height: 50px;
-  width: 100px;
-  background-color: pink;
-  float: left;
-}
-
-.main-header .nav-bar {
-  height: 50px;
-  width: 100px;
-  background-color: orange;
-  float: left;
 }
 
 header {
-  background-color: red;
+  height: 50px;
+  position: relative;
+  background-color: #101010;
+}
+
+header .action {
+  display: none;
+}
+
+header .main-header .hamb-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+}
+
+header .main-header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 80px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+header .main-header .logo img {
+  width: 100%;
+}
+
+header .main-header .nav-bar {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: unset;
+  }
+
+  header .action {
+    display: block;
+  }
+
+  header .main-header::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  header .main-header .hamb-menu {
+    display: none;
+  }
+
+  header .main-header .logo {
+    float: left;
+  }
+
+  header .main-header .nav-bar {
+    display: block;
+    float: left;
+  }
 }
 
 main {

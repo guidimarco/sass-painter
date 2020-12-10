@@ -1,0 +1,88 @@
+header {
+    height: $headerHeight;
+    position: relative;
+    background-color: $brandPrimary;
+
+    // TOP action link
+    .action {
+        // media query --> MD
+        display: none;
+    }
+
+    // BTM main-header
+    .main-header {
+        // hamburger-menu
+        .hamb-menu {
+            @include flex(row, center, center);
+            width: $headerHeight; height: $headerHeight;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        // header-logo
+        .logo {
+            @include flex(row, center, center);
+            max-width: $headerHeight * 1.6; height: $headerHeight;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // header main-menu
+        .nav-bar {
+            // media query --> MD
+            display: none;
+        }
+    } // fine main-header (logo, hamburger-menu, nav-menu)
+} // fine header
+
+// XS
+@media screen and (min-width: $mqSM) {
+
+}
+// SM
+@media screen and (min-width: $mqMD) {
+    header {
+        height: unset;
+
+        // TOP action link
+        .action {
+            display: block;
+
+        }
+
+        // BTM main-header
+        .main-header {
+            &::after {
+                @include clearfix;
+            }
+
+            // hamburger-menu
+            .hamb-menu {
+                display: none;
+            }
+
+            // header-logo
+            .logo {
+                float: left;
+            }
+
+            // header main-menu
+            .nav-bar {
+                display: block;
+                float: left;
+            }
+        } // fine main-header (logo, hamburger-menu, nav-menu)
+    } // fine header
+}
+// MD
+@media screen and (min-width: $mqLG) {
+
+}
+// LG
+@media screen and (min-width: $mqXL) {
+
+}
+// XL

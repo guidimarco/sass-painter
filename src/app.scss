@@ -1,12 +1,12 @@
+@import 'partials/variables';
 @import 'partials/mixin';
 
-
 @import 'partials/common';
+
 @import 'partials/header';
 
-header {
-    background-color: red;
-}
+
+
 main {
     height: 100px;
     background-color: green;
