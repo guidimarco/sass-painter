@@ -6253,15 +6253,37 @@ header .main-header .nav-bar {
     color: #000000;
   }
 }
+footer ul li {
+  text-transform: capitalize;
+}
 footer li.footer-list {
   display: block;
 }
+footer li.footer-list .menu-title {
+  font-size: 15.4px;
+}
 footer li.footer-list ul li {
   display: block;
+  font-size: 11.9px;
+}
+footer .footer-menu {
+  background-color: #ebebeb;
+  padding: 40px 0 30px;
+}
+footer .copy-container {
+  min-height: 90px;
+  background-color: #1e1e1e;
+  font-size: 11.9px;
 }
 @media screen and (min-width: 768px) {
   footer li.footer-list {
     display: inline-block;
+  }
+  footer .footer-menu ul:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   footer .copy-container::after {
     display: table;
