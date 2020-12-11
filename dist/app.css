@@ -6259,15 +6259,6 @@ footer li.footer-list {
 footer li.footer-list ul li {
   display: block;
 }
-footer .copy-container .partners {
-  height: 50px;
-  background-color: red;
-}
-footer .copy-container .copy {
-  height: 50px;
-  background-color: orange;
-}
-
 @media screen and (min-width: 768px) {
   footer li.footer-list {
     display: inline-block;
@@ -6279,11 +6270,9 @@ footer .copy-container .copy {
   }
   footer .copy-container .partners {
     float: left;
-    width: 50px;
   }
   footer .copy-container .copy {
     float: right;
-    width: 50px;
   }
 }
 main {

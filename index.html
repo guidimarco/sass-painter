@@ -75,25 +75,42 @@
                     <!-- TOP nav menu -->
                     <nav class="footer-menu">
                         <ul>
+                            <!-- products menu -->
                             <li class="footer-list">
-                                <span class="menu-title">title</span>
+                                <span class="menu-title">products</span>
                                 <ul>
-                                    <li>
-                                        <a href="#">voce 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce 2</a>
+                                    <li v-for="item in menu.main[0].submenu">
+                                        <a :href="item.href">{{ item.name }}</a>
                                     </li>
                                 </ul>
                             </li>
+
+                            <!-- quick links menu -->
                             <li class="footer-list">
-                                <span class="menu-title">title</span>
+                                <span class="menu-title">quick links</span>
                                 <ul>
-                                    <li>
-                                        <a href="#">voce 1</a>
+                                    <li v-for="item in menu.footer['quick links']">
+                                        <a :href="item.href">{{ item.name }}</a>
                                     </li>
-                                    <li>
-                                        <a href="#">voce 2</a>
+                                </ul>
+                            </li>
+
+                            <!-- support menu -->
+                            <li class="footer-list">
+                                <span class="menu-title">supports</span>
+                                <ul>
+                                    <li v-for="item in menu.main[6].submenu">
+                                        <a :href="item.href">{{ item.name }}</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- about corel menu -->
+                            <li class="footer-list">
+                                <span class="menu-title">about corel</span>
+                                <ul>
+                                    <li v-for="item in menu.footer.about">
+                                        <a :href="item.href">{{ item.name }}</a>
                                     </li>
                                 </ul>
                             </li>
@@ -103,10 +120,25 @@
                     <!-- BTM copy -->
                     <div class="copy-container">
                         <!-- TOP -> SX logo partners -->
-                        <div class="partners"></div>
+                        <div class="partners">
+                            <ul>
+                                <li v-for="item in menu.footer.partners">
+                                    <a :href="item.href"><img :src="item.img" :alt="item.name"></a>
+                                </li>
+                            </ul>
+                        </div>
 
                         <!-- BTM -> DX copyright -->
-                        <div class="copy"></div>
+                        <div class="copy">
+                            <ul>
+                                <li v-for="item in menu.footer.legal">
+                                    <a :href="item.href">{{ item.name }}</a>
+                                </li>
+
+                                <!-- copy span -->
+                                <li>Copyright &copy; 2020 Corel Corporation. All rights reserved.</li>
+                            </ul>
+                        </div>
                     </div><!-- end of copy -->
                 </div>
             </footer>

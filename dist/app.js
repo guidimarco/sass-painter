@@ -12608,7 +12608,25 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       'main': [{
         name: 'products',
         href: '#',
-        submenu: []
+        submenu: [{
+          name: 'corel painter',
+          href: '#'
+        }, {
+          name: 'particle shop',
+          href: '#'
+        }, {
+          name: 'painter essentials',
+          href: '#'
+        }, {
+          name: 'special offers',
+          href: '#'
+        }, {
+          name: 'free trials',
+          href: '#'
+        }, {
+          name: 'all products',
+          href: '#'
+        }]
       }, {
         name: 'brushes',
         href: '#',
@@ -12628,24 +12646,91 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       }, {
         name: 'support',
         href: '#',
-        submenu: []
+        submenu: [{
+          name: 'register your product',
+          href: '#'
+        }, {
+          name: 'patches & updates',
+          href: '#'
+        }, {
+          name: 'knowledgebase',
+          href: '#'
+        }, {
+          name: 'uninstall instructions',
+          href: '#'
+        }, {
+          name: 'contact us',
+          href: '#'
+        }]
       }, {
         name: 'learning',
         href: '#',
         submenu: []
       }],
-      // main-menu
-      'legal': [{
-        name: 'terms of use',
-        href: '#'
-      }, {
-        name: 'privacy',
-        href: '#'
-      }, {
-        name: 'cookies',
-        href: '#'
-      }] // legal-menu
-
+      // main-menu        
+      'footer': {
+        'quick links': [{
+          name: 'licensing',
+          href: '#'
+        }, {
+          name: 'tutorials & tips',
+          href: '#'
+        }, {
+          name: 'webinars',
+          href: '#'
+        }, {
+          name: 'the painter factory',
+          href: '#'
+        }, {
+          name: 'discovery center',
+          href: '#'
+        }, {
+          name: 'beta programs',
+          href: '#'
+        }],
+        'about': [{
+          name: 'company information',
+          href: '#'
+        }, {
+          name: 'newsroom',
+          href: '#'
+        }, {
+          name: 'careers',
+          href: '#'
+        }, {
+          name: 'partner program',
+          href: '#'
+        }, {
+          name: 'legal information',
+          href: '#'
+        }, {
+          name: 'eula',
+          href: '#'
+        }],
+        'partners': [{
+          name: 'corel advantage',
+          href: '#',
+          img: 'https://www.painterartist.com/static/ptr/corelAdvantage.png'
+        }, {
+          name: 'accredited business',
+          href: '#',
+          img: 'https://www.painterartist.com/static/common/images/logo-bbb.png'
+        }, {
+          name: 'mcafee secure',
+          href: '#',
+          img: 'http://cdn.ywxi.net/meter/www.coreldraw.com/101.gif'
+        }],
+        'legal': [{
+          name: 'terms of use',
+          href: '#'
+        }, {
+          name: 'privacy',
+          href: '#'
+        }, {
+          name: 'cookies',
+          href: '#'
+        }]
+      }
     } // end all menu
 
   },
