@@ -1,9 +1,9 @@
 header {
     min-height: $headerHeight;
-    position: relative;
     background-color: $brandPr;
     color: $textPr;
     font-size: $fontSize;
+    @include posAbs(0, 0, 0, unset);
 
     // TOP action link
     .action {

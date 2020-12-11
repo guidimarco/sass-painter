@@ -6163,10 +6163,14 @@ a.dropdown::after {
 
 header {
   min-height: 50px;
-  position: relative;
   background-color: #101010;
   color: #ffffff;
   font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: unset;
 }
 header .action {
   display: none;
@@ -6253,6 +6257,19 @@ header .main-header .nav-bar {
     color: #000000;
   }
 }
+main section.jumbotron {
+  height: calc(100vh - 55px);
+  padding: 195px 0 36px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main nav {
+  height: 55px;
+  background-color: #ebebeb;
+}
+
 footer ul li {
   text-transform: capitalize;
 }
@@ -6337,8 +6354,4 @@ footer .copy-container .container .copy ul li a:hover {
     margin-right: 0;
     margin-left: 12px;
   }
-}
-main {
-  height: 100px;
-  background-color: green;
 }
