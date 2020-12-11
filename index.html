@@ -20,37 +20,22 @@
         <div id="root">
             <header>
                 <div class="container">
-                    <!-- TOP action list of link -->
+                    <!-- TOP action menu -->
                     <div class="action">
                         <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-phone"></i>
-                                    1-877-582-6735
+                            <li v-for="item in menu.user">
+                                <a :href="item.href">
+                                    <i class="fas"
+                                        :class="'fa-' + item.icon"></i>
+                                    {{ item.name }}
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-comment-alt"></i>
-                                    chat
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-user"></i>
-                                    sign in
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    cart
-                                </a>
-                            </li>
+
+                            <!-- select lang -->
                             <li>
                                 lang
                             </li>
-                        </ul>
+                        </ul><!--  END user menu -->
                     </div>
 
                     <!-- BTM main header -->
@@ -68,29 +53,12 @@
                         <!-- nav menu -->
                         <nav class="nav-bar">
                             <ul>
-                                <li>
-                                    <a class="dropdown" href="#">products</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown" href="#">brushes</a>
-                                </li>
-                                <li>
-                                    <a href="#">wacom tablets</a>
-                                </li>
-                                <li>
-                                    <a href="#">special offers</a>
-                                </li>
-                                <li>
-                                    <a href="#">free trials</a>
-                                </li>
-                                <li>
-                                    <a href="#">business</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown" href="#">support</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown" href="#">learning</a>
+                                <li v-for="item in menu.main">
+                                    <a href="#"
+                                        :href="item.href"
+                                        :class="item.submenu ? 'dropdown' : ''">
+                                        {{ item.name }}
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
