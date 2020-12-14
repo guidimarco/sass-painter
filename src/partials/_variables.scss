@@ -4,6 +4,7 @@ $fontSize: 14px;
 
 // spacing
 $spacing: 12px;
+$gutter: 15px; // see _12col.scss
 
 // color
 $brandPr: #101010;
@@ -21,8 +22,5 @@ $headerHeight: 50px;
 $btmFooterHeight: 60px; // min height footer btm
 $mainNavHeight: 55px; // nav-bar after jumbotron
 
-// media query
-$mqSM: 576px;
-$mqMD: 768px;
-$mqLG: 992px;
-$mqXL: 1200px;
+// media query maps "media-query-name" + m-q-min-width + container-max-width
+$mediaQuery: ("xs" 0 560, "sm" 576 540, "md" 768 720, "lg" 992 960, "xl" 1200 1140);

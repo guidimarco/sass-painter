@@ -1,4 +1,4 @@
-// font-awesome
+// // font-awesome
 $fa-font-path: 'fontawesome';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
@@ -8,9 +8,10 @@ $fa-font-path: 'fontawesome';
 // PROJECT
 @import 'partials/variables';
 @import 'partials/mixin';
+@import 'partials/12col';
 
 @import 'partials/common';
 
-@import 'partials/header';
-@import 'partials/main';
-@import 'partials/footer';
+// @import 'partials/header';
+// @import 'partials/main';
+// @import 'partials/footer';
