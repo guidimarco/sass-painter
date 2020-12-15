@@ -14,11 +14,11 @@
 }
 
 // media-query --> see in var
-@each $name, $minWidth, $maxWidth in $mediaQuery {
-    @media screen and (min-width: #{$minWidth}px) {
+@each $name, $minW, $maxW in $mediaQuery {
+    @media screen and (min-width: #{$minW}) {
         // generate max-width of container for each m-q
         .container {
-            max-width: #{$maxWidth}px;
+            max-width: #{$maxW};
         }
 
         // generate 12-col for each m-q

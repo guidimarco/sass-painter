@@ -41,11 +41,11 @@ header {
 } // fine header
 
 // XS
-@media screen and (min-width: $mqSM) {
+@media screen and (min-width: $sm-min) {
 
 }
 // SM
-@media screen and (min-width: $mqMD) {
+@media screen and (min-width: $md-min) {
     header {
         // all header style
         ul {
@@ -126,11 +126,11 @@ header {
     } // fine header
 }
 // MD
-@media screen and (min-width: $mqLG) {
+@media screen and (min-width: $lg-min) {
 
 }
 // LG
-@media screen and (min-width: $mqXL) {
+@media screen and (min-width: $xl-min) {
 
 }
 // XL
